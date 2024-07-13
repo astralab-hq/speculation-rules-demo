@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Places to Visit in Jakarta</title>
+</head>
+<body>
+<div style="width: 50%; margin: auto; margin-top: 5rem;">
+    <h1>Places to visit in Jakarta</h1>
+    <ul>
+        <li><a href="place-monas.html">National Monument (Monas)</a>: Iconic monument symbolizing Indonesia's
+            independence struggle, with an observation deck offering panoramic views of the city.
+        </li>
+        <li><a href="place-mini.html">Taman Mini Indonesia Indah</a>: A cultural park showcasing Indonesia's diverse
+            cultures through pavilions, museums, and traditional performances.
+        </li>
+        <li><a href="place-ancol.html">Ancol Dreamland</a>: A waterfront resort area featuring amusement parks (such as
+            Dunia Fantasi), beaches, and a golf course.
+        </li>
+        <li><a href="place-kota.html">Old Town (Kota Tua)</a>: Historical district with Dutch colonial architecture,
+            museums (like Jakarta History Museum), and cafes.
+        </li>
+        <li><a href="place-grand.html">Grand Indonesia Mall and Plaza Indonesia</a>: Upscale shopping malls with
+            international brands, dining options, and entertainment.
+        </li>
+    </ul>
+    <h3>Can skip if time is limited</h3>
+    <ul>
+        <li><a href="place-mangga.html" class="do-not-prerender">Mangga Dua</a>: While it's known for its shopping malls and electronics markets,
+            Mangga Dua can be chaotic, crowded, and lacks the charm of other areas in Jakarta. It's often criticized for
+            its congested traffic and lack of cleanliness.
+        </li>
+        <li><a href="place-ancol.html" class="do-not-prerender">Ancol Beach</a>: Despite being a popular destination, Ancol Beach is often criticized for its cleanliness issues and water quality. It can be overcrowded on weekends and may not offer the pristine beach experience some travelers seek.
+        </li>
+    </ul>
+</div>
+</body>
+<!-- URL Rules -->
+
+<!-- Document Rules -->
+<script type="speculationrules">
+    {
+      "prerender": [{
+        "where": {
+          "and": [
+            { "href_matches": "/*" },
+            { "not": {"href_matches": "/wp-admin"}},
+            { "not": {"selector_matches": ".do-not-prerender"}},
+            { "not": {"selector_matches": "[rel=nofollow]"}}
+          ]
+        },
+       "eagerness": "moderate"
+      }]
+    }
+</script>
+</html>
